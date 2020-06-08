@@ -14,6 +14,9 @@ Rails.application.configure do
     :domain         => 'heroku.com',
     :enable_starttls_auto => true
   }
+  
+  # Store uploaded files on Amazon AWS.
+  config.active_storage.service = :amazon
 
   # Force all access to the app over SSL, use Strict-Transport-Security,
   # and use secure cookies.
